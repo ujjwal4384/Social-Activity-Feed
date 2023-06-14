@@ -8,8 +8,9 @@ const userRoute=require('./routes/users');
 const authRoute=require('./routes/auth');
 const postRoute=require('./routes/posts');
 const activityRoute=require('./routes/activities');
-const PORT= process.env.PORT || 8800;
 dotenv.config();
+
+const PORT = process.env.PORT || 8800;
 
 // Database connection
 mongoose.connect(`${process.env.MONGO_URL}`, {useNewUrlParser: true, useUnifiedTopology: true})
